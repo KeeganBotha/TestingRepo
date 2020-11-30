@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grade Book Project", "Grade Book Project\Grade Book Project.csproj", "{5C189E56-407D-403A-A01D-51211A09937B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SRC", "SRC", "{8939ECBC-6E81-4227-9A77-9FEE93FC374F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TEST", "TEST", "{84825E10-F9C6-429F-B7E6-14CFBB417E5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grade Book", "Grade Book", "{1DB6AA79-0951-4D78-B68B-A6F0F8707F7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +24,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C189E56-407D-403A-A01D-51211A09937B} = {1DB6AA79-0951-4D78-B68B-A6F0F8707F7F}
+		{1DB6AA79-0951-4D78-B68B-A6F0F8707F7F} = {8939ECBC-6E81-4227-9A77-9FEE93FC374F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDB2ED4A-2CA6-4CFD-995D-EF3D6AADEB31}
