@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grade Book Project", "Grade Book Project\Grade Book Project.csproj", "{5C189E56-407D-403A-A01D-51211A09937B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grade Book Project", "Grade Book Project\Grade Book Project.csproj", "{5C189E56-407D-403A-A01D-51211A09937B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SRC", "SRC", "{8939ECBC-6E81-4227-9A77-9FEE93FC374F}"
 EndProject
