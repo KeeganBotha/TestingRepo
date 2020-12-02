@@ -8,8 +8,12 @@ namespace Grade_Book_Project
 	{
 		static void Main(string[] args)
 		{
-			var book = new Book();
+			var book = new Book("Book One");
+			book.AddGrade(79.1);
 			book.AddGrade(89.1);
+			book.AddGrade(99.1);
+
+			book.ComputeStatistics();
 		}
 	}
 }

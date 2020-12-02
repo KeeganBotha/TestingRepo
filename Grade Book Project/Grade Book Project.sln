@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TEST", "TEST", "{84825E10-F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grade Book", "Grade Book", "{1DB6AA79-0951-4D78-B68B-A6F0F8707F7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeBook.Test", "GradeBook.Test\GradeBook.Test.csproj", "{F8B864A1-15DD-46D6-AC01-F72BD1CF199B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grade Book", "Grade Book", "{4FE0365A-27B9-4F73-8D7D-530DF77BD085}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,10 @@ Global
 		{5C189E56-407D-403A-A01D-51211A09937B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C189E56-407D-403A-A01D-51211A09937B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C189E56-407D-403A-A01D-51211A09937B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8B864A1-15DD-46D6-AC01-F72BD1CF199B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B864A1-15DD-46D6-AC01-F72BD1CF199B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B864A1-15DD-46D6-AC01-F72BD1CF199B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8B864A1-15DD-46D6-AC01-F72BD1CF199B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -28,6 +36,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5C189E56-407D-403A-A01D-51211A09937B} = {1DB6AA79-0951-4D78-B68B-A6F0F8707F7F}
 		{1DB6AA79-0951-4D78-B68B-A6F0F8707F7F} = {8939ECBC-6E81-4227-9A77-9FEE93FC374F}
+		{F8B864A1-15DD-46D6-AC01-F72BD1CF199B} = {4FE0365A-27B9-4F73-8D7D-530DF77BD085}
+		{4FE0365A-27B9-4F73-8D7D-530DF77BD085} = {84825E10-F9C6-429F-B7E6-14CFBB417E5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDB2ED4A-2CA6-4CFD-995D-EF3D6AADEB31}
