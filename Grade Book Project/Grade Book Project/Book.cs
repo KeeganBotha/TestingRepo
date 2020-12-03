@@ -14,17 +14,43 @@ namespace GradeBook
 
 		public void AddGrade(double grade) 
 		{
-			highestGrade = Math.Max(grade, highestGrade);
-			lowestGrade = Math.Min(grade, lowestGrade);
-			grades.Add(grade);
+			if (grade <= 100.00 && grade >= 0.00)
+			{
+				grades.Add(grade);
+			}
+			else 
+			{
+				Console.WriteLine("Invalid value");
+			}
+		}
+		public void AddLetterGrade(char letter)
+		{
+			if (letter == 'A')
+			{
+				AddGrade(90);			
+			}
+
 		}
 		public Statistics ComputeStatistics() 
 		{
 			var result = new Statistics();
-			result.Average = GradeAverage();
-			result.High = highestGrade;
-			result.Low = lowestGrade;
+			result.Average = 0.0;
+			result.High = double.MinValue;
+			result.Low = double.MaxValue;
 
+			for(int index = 0; index < grades.Count; index ++)
+			{
+				if (grades[index] == 42.1)
+				{
+					continue;
+				}
+
+				result.High = Math.Max(grades[index], result.High);
+				result.Low = Math.Min(grades[index], result.Low);
+				result.Average += grades[index];
+			} 
+
+			result.Average /= grades.Count;
 			return result;
 		}
 
@@ -35,8 +61,7 @@ namespace GradeBook
 
 		private List<double> grades;
 		public string Name;
-		private double highestGrade = double.MinValue;
-		private double lowestGrade = double.MaxValue;
+	
 
 		//private double HighestGrade()
 		//{
