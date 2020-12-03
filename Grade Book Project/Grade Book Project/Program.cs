@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Grade_Book_Project
+namespace GradeBook
 {
 	class Program
 	{
@@ -13,7 +13,11 @@ namespace Grade_Book_Project
 			book.AddGrade(89.1);
 			book.AddGrade(99.1);
 
-			book.ComputeStatistics();
+			var stats = book.ComputeStatistics();
+
+			Console.WriteLine($"The lowest grade is {stats.Low}");
+			Console.WriteLine($"The highest grade is {stats.High}");
+			Console.WriteLine($"The average grade is {stats.Average:N1}");
 		}
 	}
 }

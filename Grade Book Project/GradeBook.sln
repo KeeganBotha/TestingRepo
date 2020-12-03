@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grade Book Project", "Grade Book Project\Grade Book Project.csproj", "{5C189E56-407D-403A-A01D-51211A09937B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GradeBook", "Grade Book Project\GradeBook.csproj", "{5C189E56-407D-403A-A01D-51211A09937B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SRC", "SRC", "{8939ECBC-6E81-4227-9A77-9FEE93FC374F}"
 EndProject
@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TEST", "TEST", "{84825E10-F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grade Book", "Grade Book", "{1DB6AA79-0951-4D78-B68B-A6F0F8707F7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeBook.Test", "GradeBook.Test\GradeBook.Test.csproj", "{F8B864A1-15DD-46D6-AC01-F72BD1CF199B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GradeBook.Test", "GradeBook.Test\GradeBook.Test.csproj", "{F8B864A1-15DD-46D6-AC01-F72BD1CF199B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grade Book", "Grade Book", "{4FE0365A-27B9-4F73-8D7D-530DF77BD085}"
 EndProject

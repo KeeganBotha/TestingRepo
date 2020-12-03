@@ -2,14 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace GradeBook 
+namespace GradeBook
 {
-	class Book 
+	public class Book 
 	{
 		public Book(string name) 
 		{
 			grades = new List<double>();
-			this.name = name;
+			Name = name;
 		}
 
 		public void AddGrade(double grade) 
@@ -18,43 +18,33 @@ namespace GradeBook
 			lowestGrade = Math.Min(grade, lowestGrade);
 			grades.Add(grade);
 		}
-		public void ComputeStatistics() 
+		public Statistics ComputeStatistics() 
 		{
-			HighestGrade();
-			LowestGrade();
-			GradeAverage();
+			var result = new Statistics();
+			result.Average = GradeAverage();
+			result.High = highestGrade;
+			result.Low = lowestGrade;
+
+			return result;
 		}
 
-		private void HighestGrade()
+		private double GradeAverage()
 		{
-			if (highestGrade > 0.0)
-			{
-				Console.WriteLine($"The highest grade is {highestGrade:N1}");
-			}
-			else
-			{
-				Console.WriteLine("You have not yet entered a grade into the grade book.");
-			}
-		}
-		private void LowestGrade()
-		{
-			if (lowestGrade <= 100)
-			{
-				Console.WriteLine($"The lowest grade is {lowestGrade:N1}");
-			}
-			else
-			{
-				Console.WriteLine("You have not yet entered a grade into the grade book.");
-			}
-		}
-		private void GradeAverage() 
-		{
-			Console.WriteLine($"The average grade is {(grades.Sum() / grades.Count):N1}");
+			return (grades.Sum() / grades.Count);
 		}
 
 		private List<double> grades;
-		private string name;
-		private double highestGrade = 0.0;
-		private double lowestGrade = 101.0;
+		public string Name;
+		private double highestGrade = double.MinValue;
+		private double lowestGrade = double.MaxValue;
+
+		//private double HighestGrade()
+		//{
+		//	return highestGrade;
+		//}
+		//private double LowestGrade()
+		//{
+		//	return lowestGrade;
+		//}
 	}
 }
